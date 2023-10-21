@@ -1,0 +1,172 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1rem 8rem;
+    font-size: 15px;
+}
+
+header .navigation .menu{
+    display: flex;
+    gap: 1.8rem;
+}
+
+header .navigation .menu.active{
+    display: block;
+}
+
+header .navigation a{
+    color: var(--neutral-dark-grayish);
+}
+
+header .navigation a:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    color: var(--primary-soft-red);
+}
+
+main{
+    margin: 0 8rem;
+}
+
+main .section{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 2rem;
+}
+
+main .section .main-section img{
+    max-width: 100%;
+}
+
+main .section .main-section .content{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main .section .main-section .content h1{
+    font-size: 46px;
+    font-weight: 800;
+}
+
+main .section .main-section .content p{
+    color: var(--neutral-dark-grayish);
+    max-width: 800px;
+}
+
+main .section .main-section .content .btn{
+    margin-top: 1rem;
+    width: 50%;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: var(--primary-soft-red);
+    border: none;
+    outline: none;
+}
+
+main .section .main-section .content .btn:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    background-color: var(--neutral-very-dark);
+}
+
+main .section .extra-content{
+    background-color: var(--neutral-very-dark);
+    color: var(--neutral-grayish);
+    font-size: 12px;
+    padding: 1.5rem 1rem;
+}
+
+main .section .extra-content h2{
+    font-size: 24px;
+    color: var(--primary-soft-orange);
+}
+
+main .section .extra-content .hydrogen-vs-electric-cars, main .section .extra-content .the-downside-of-ai-artistry, main .section .extra-content .is-vc-funding-drying-up{
+    padding: 1rem 0;
+    font-size: 15px;
+}
+
+main .section .extra-content a{
+    color: var(--neutral-off-white);
+}
+
+main .section .extra-content a:hover{
+    color: var(--primary-soft-orange);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+main .section .extra-content p{
+    margin-top: .5rem;
+}
+
+main .section .extra-content .hydrogen-vs-electric-cars, main .section .extra-content .the-downside-of-ai-artistry{
+    border-bottom: 1px solid var(--neutral-dark-grayish);
+}
+
+main .others{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .others .reviving-retro-pc, main .others .top-10-laptops-of-2022, main .others .the-growth-of-gaming{
+    display: flex;
+    gap: 1rem;
+    opacity: 0.8;
+}
+
+main .others .reviving-retro-pc:hover, main .others .top-10-laptops-of-2022:hover, main .others .the-growth-of-gaming:hover{
+    opacity: 1;
+    animation: left-right .5s alternate infinite ease-in-out;
+}
+
+@keyframes left-right {
+    0%{ -webkit-transform: translateX(0);}
+    100%{ -webkit-transform: translateX(.4rem);}
+}
+
+main .others img{
+    width: 100px;
+}
+
+main .others .title-info span{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--neutral-grayish);
+}
+
+main .others .title-info h3{
+    margin-top: .5rem;
+    font-size: 16px;
+}
+
+main .others .title-info a{
+    color: var(--neutral-very-dark);
+}
+
+main .others .title-info a:hover{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    color: var(--primary-soft-red);
+}
+
+main .others .title-info p{
+    margin-top: .5rem;
+    font-size: 14px;
+    max-width: 200px;
+    color: var(--neutral-dark-grayish);
+    line-height: 22px;
+}
+
+
